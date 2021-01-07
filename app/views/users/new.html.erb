@@ -1,0 +1,6 @@
+<%= form_for @user, method: :patch do |form| %>
+  Username: <%= form.text_field :username, value: "Your Username here" %>
+  Email: <%= form.text_field :email, placeholder: "e.g: toby@iscool.com" %>
+  Password: <%= form.password_field :password %>
+  <%= form.submit "Submit" %>
+<% end %>
